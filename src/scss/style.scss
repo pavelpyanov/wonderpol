@@ -1,1 +1,130 @@
 @import "zero.scss";
+
+body {
+    font-family: 'Montserrat', sans-serif;}
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.header {
+    background: url(../img/pump.png) 183% 37%/80% no-repeat, 
+    linear-gradient(121.44deg, #F4A709 7.15%, rgba(188, 190, 76, 0.89) 96.42%);
+    
+    padding: 0px 0px 50px 0px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 20px;
+        & li {
+            text-align: center;
+            margin: 0px 20px 0px 0px;
+        }
+        & li:first-child {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        & li:last-child {
+            margin: 0px 0px 0px 0px;
+        }
+    }
+
+    &__link {
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+    }
+    
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        max-width: 50%;
+        font-weight: bold;
+        font-size: 55px;
+        line-height: 67px;
+        margin: 0px 0px 30px 0px;
+    }
+
+    &__txt {
+        max-width: 35%;
+        font-size: 25px;
+        line-height: 33px;
+        margin: 0px 0px 50px 0px;
+    }
+
+    &__back-call {
+    }
+}
+.container {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+.logo {
+
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_right {
+            padding: 0px 0px 0px 10px;
+            }
+        
+        &_right a {
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 37px;
+            color: #000000;
+        }
+        &_right p {
+            font-size: 18px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+    } 
+}
+.phone {
+
+    &__link {
+        display: inline-block;
+        padding: 17px;
+        padding-left: 35px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        color: #000000;
+        background: url(../img/phone.svg) 4px center no-repeat, #0FBA34;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+    }
+}
+.back-call {
+
+    &__link {
+        display: inline-block;
+        padding: 17px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        color: #000000;
+        background: #0FBA34;
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+    }
+}
